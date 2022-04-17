@@ -1,0 +1,22 @@
+public class Solution {
+    public void ReverseString(char[] s) {
+       /* Array.Reverse(s);
+          foreach(var c in s)
+            {
+                Console.Write(c);
+            }
+            
+       */
+        int start=0;
+        char temp;
+        int end= s.Length-1;
+        while(start<end)
+        {
+            temp=s[end];
+            s[end]=s[start];
+            s[start]=temp;
+            start++;
+            end--;
+        }
+    }
+}
